@@ -1,0 +1,159 @@
+@media (max-width: 480px) {
+	.container {
+	margin: 0px auto;
+	width: 100%;
+	}
+	.header {
+		display:none;
+	}
+	.mobile-nav-bar {
+		display:none;
+	}
+}
+@media (min-width: 480px) {
+	.mobile-header {
+		display:none;
+	}
+	.mobile-nav-bar {
+		display: none;
+	}
+}
+@font-face {
+	font-family: mavenprolight;
+	src: url("/fonts/mavenprolight-200-webfont.tff");
+	src: url("/fonts/mavenprolight-200-webfont.svg");
+	src: url("/fonts/mavenprolight-200-webfont.woff");
+	src: url("/fonts/mavenprolight-200-webfont.eot");
+	src: url("/fonts/mavenprolight-300-webfont.tff");
+	src: url("/fonts/mavenprolight-300-webfont.svg");
+	src: url("/fonts/mavenprolight-300-webfont.woff");
+	src: url("/fonts/mavenprolight-300-webfont.eot");
+}
+
+
+
+/*Large Displays*/
+
+.container {
+	margin: 0px auto;
+	width: 85%;
+}
+.header {
+	height: 81px;
+	/*When making body, remove border-bottom and set height to 76px?*/
+	border-bottom: solid 5px #56524D;
+	font-family: mavenprolight;
+	clear:both;
+}
+.logo {
+	margin: 28px 0px 26px 0px;
+}
+
+.logo > div {
+	float:left;
+	line-height: 81px;
+	font-size: 22px;
+	font-weight: bold;
+}
+.occupation {
+	margin-left: 10px;
+	color: #A09B95;
+}
+.nav-bar {
+	float:right;
+	line-height: 81px;
+}
+.categories {
+	margin: 0px;
+}
+.categories > li {
+	margin-left: 10px;
+	float:left;
+	list-style-type: none;
+	font-size: 15px;
+}
+.categories > li > a {
+	text-decoration: none;
+}
+
+.fade:link {
+	color:#56524D;
+}
+.fade:visited {
+	color:#56524D;
+}
+.fade:hover {
+	color:#FF5F40;
+	transition: 1s;
+}
+.all_cat {
+	color:#FF5F40;
+	font-weight: bold;
+}
+.info_cat {
+	font-weight: bold;
+}
+.stuff_cat {
+	font-weight: bold;
+}
+
+
+/*Mobile Displays*/
+.mobile-header {
+	height: 95px;
+	width: 100%;
+	border-bottom: solid 5px #56524D;
+	font-family: mavenprolight;
+	line-height: 95px;
+}
+.mobile-logo {
+	margin: 28px 0px 26px 10%;
+	font-weight: bold;
+	font-size: 35px;
+}
+.mobile-logo > div {
+	float:left;
+}
+.mobile-nav-bar {
+	margin: 26px 50px 160px;
+}
+.mobile-categories > div > li {
+	list-style-type: none;
+}
+.mobile-categories > div > li > a {
+	text-decoration: none;
+	font-size: 30px;
+	color:black;
+}
+.nav-button {
+	margin: 30px 10%;
+	padding: 0px;
+	float:right;
+	border: none;
+}
+.nav-close-button {
+	margin:30px 10%;
+	padding: 0px;
+	float:right;
+	border: none;
+}
+.l-column {
+	margin-top: 28px;
+	width: 260px;
+	float:left;
+}
+.r-column {
+	margin-top: 28px;
+	width: 260px;
+	float:right;
+}
+.all_mobile {
+	color:#FF5F40;
+	font-weight: bold;
+}
+.info_mobile {
+	font-weight: bold;
+}
+.stuff_mobile {
+	font-weight: bold;
+}

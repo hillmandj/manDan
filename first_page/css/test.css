@@ -1,0 +1,108 @@
+.container {
+	margin: 15px auto 35px; /* top  left&right bottom */
+	width: 90%;
+	padding: 0px;
+	border: solid 1px #000;
+	font-family: "Calibri";
+	font-size: medium;
+}
+.header {
+	border-bottom: solid 1px #000;
+	height: 45px;
+	background-color: white;
+	line-height: 45px;
+}
+.Logo {
+	font-size: 18px;
+	color: black;
+	text-align: center;
+	float: left;
+	width: 10%;
+}
+.Blank {
+	width: 20%;
+	text-align: center;
+	float:left;
+}
+.About {
+	width: 70%;
+	text-align: center;
+	float: left;
+}
+.drawcirc {
+	margin: 15px;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+
+.has-border-top-bottom {
+	border-top: solid 1px #000;
+	border-bottom: solid 1px #000;
+
+}
+
+.title {
+	text-indent: 25px;
+
+}
+.mast-head {
+	text-indent: 25px;
+
+}
+.widgets {
+	text-align: center;
+}
+
+.has-dotted-border {
+	border: dotted 1px #000;
+	padding: 9px;
+
+}
+.widgets-sub-container {
+	margin: 3.5px auto;
+	width: 90%;
+}
+.video {
+	width: 55%;
+
+}
+.list {
+	width: 35%;
+}
+
+
+.marketing1, .marketing2, .faq {
+	padding: 10px;
+	text-indent: 25px;
+
+}
+.footer {
+	padding: 10px;
+	text-indent: 25px;
+	border-top: solid 1px #000;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
