@@ -1,8 +1,26 @@
-@media (max-width: 480px) {
-	.container {
-	margin: 0px auto;
-	width: 100%;
+/*Media queries for Large Displays*/
+@media (min-width: 800px) {
+	.mobile-header {
+		display:none;
 	}
+	.mobile-nav-bar {
+		display:none;
+	}
+	.shift {
+		display:none;
+	}
+} 
+@media (max-width: 799px) {
+	.mobile-header {
+		display:none;
+	}
+	.mobile-nav-bar {
+		display:none;
+	}
+}
+
+/*Media queries for Mobile Displays*/
+@media handheld and (aspect-ratio: 71/40), (aspect-ratio: 40/71) {
 	.header {
 		display:none;
 	}
@@ -10,14 +28,17 @@
 		display:none;
 	}
 }
-@media (min-width: 480px) {
-	.mobile-header {
+
+@media handheld and (aspect-ratio: 3/2), (aspect-ratio: 2/3) {
+	.header {
 		display:none;
 	}
 	.mobile-nav-bar {
-		display: none;
+		display:none;
 	}
 }
+
+/*Import Fonts*/
 @font-face {
 	font-family: mavenprolight;
 	src: url("/fonts/mavenprolight-200-webfont.tff");
