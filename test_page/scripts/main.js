@@ -1,3 +1,0 @@
-require(['pushme'], function(pushme){
-
-});
