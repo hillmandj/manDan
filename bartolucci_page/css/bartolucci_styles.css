@@ -1,40 +1,49 @@
 /*Media queries for Large Displays*/
-@media (min-width: 800px) {
+@media (min-width: 1353px) {
 	.mobile-header {
-		display:none;
+		display: none;
 	}
 	.mobile-nav-bar {
-		display:none;
+		display: none;
 	}
 	.shift {
-		display:none;
+		display: none;
 	}
 } 
-@media (max-width: 799px) {
+@media (max-width: 1352px) {
 	.mobile-header {
-		display:none;
+		display: none;
 	}
 	.mobile-nav-bar {
-		display:none;
+		display: none;
+	}
+	.header > .nav-bar {
+		line-height: 18px;
+		padding-top: 23px;
+	}
+	.nav-bar > .categories {
+		text-align: right
+	}
+	.nav-bar > ul > .r-cat {
+		float:none;
+	}
+	.categories > .r-cat {
+		display: inline;
 	}
 }
 
 /*Media queries for Mobile Displays*/
-@media handheld and (aspect-ratio: 71/40), (aspect-ratio: 40/71) {
-	.header {
-		display:none;
-	}
-	.mobile-nav-bar {
-		display:none;
-	}
-}
 
-@media handheld and (aspect-ratio: 3/2), (aspect-ratio: 2/3) {
-	.header {
+/*@media handheld and (aspect-ratio: 71/40), (aspect-ratio: 40/71), (aspect-ratio: 3/2), (aspect-ratio: 2/3) {*/
+@media (aspect-ratio: 71/40), (aspect-ratio: 40/71), (aspect-ratio: 3/2), (aspect-ratio: 2/3) {
+	.nav-bar {
 		display:none;
 	}
 	.mobile-nav-bar {
 		display:none;
+	}
+	.header > .nav-button {
+		display:block;
 	}
 }
 
@@ -52,12 +61,15 @@
 }
 
 
-
 /*Large Displays*/
-
+body {
+	margin: 0px;
+}
 .container {
 	margin: 0px auto;
 	width: 85%;
+	position: relative;
+	z-index: 0;
 }
 .header {
 	height: 81px;
@@ -67,14 +79,15 @@
 	clear:both;
 }
 .logo {
-	margin: 28px 0px 26px 0px;
-}
-
-.logo > div {
 	float:left;
+}
+.logo .name {
+	margin: 28px 0px 26px;
 	line-height: 81px;
 	font-size: 22px;
 	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
 }
 .occupation {
 	margin-left: 10px;
@@ -96,7 +109,6 @@
 .categories > li > a {
 	text-decoration: none;
 }
-
 .fade:link {
 	color:#56524D;
 }
@@ -135,28 +147,37 @@
 .mobile-logo > div {
 	float:left;
 }
-.mobile-nav-bar {
-	margin: 26px 50px 160px;
-}
 .mobile-categories > div > li {
 	list-style-type: none;
 }
 .mobile-categories > div > li > a {
 	text-decoration: none;
 	font-size: 30px;
-	color:black;
+	color:#000000;
+}
+.mobile-nav-bar {
+	background-color:#FFFFFF;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 442px;
 }
 .nav-button {
-	margin: 30px 10%;
+	width: 47px;
+	height: 35px;
 	padding: 0px;
 	float:right;
 	border: none;
+	display: none;
+	background-image: url('../images/menu.png')
 }
 .nav-close-button {
-	margin:30px 10%;
+	width: 42px;
+	height: 42px;
 	padding: 0px;
 	float:right;
 	border: none;
+	background-image: url('../images/close.png');
 }
 .l-column {
 	margin-top: 28px;
