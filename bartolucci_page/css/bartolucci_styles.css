@@ -25,7 +25,7 @@
 		text-align: right
 	}
 	.nav-bar > ul > .r-cat {
-		float:none;
+		float: none;
 	}
 	.categories > .r-cat {
 		display: inline;
@@ -37,13 +37,23 @@
 /*@media handheld and (aspect-ratio: 71/40), (aspect-ratio: 40/71), (aspect-ratio: 3/2), (aspect-ratio: 2/3) {*/
 @media (aspect-ratio: 71/40), (aspect-ratio: 40/71), (aspect-ratio: 3/2), (aspect-ratio: 2/3) {
 	.nav-bar {
-		display:none;
+		display: none;
 	}
 	.mobile-nav-bar {
-		display:none;
+		display: none;
 	}
 	.header > .nav-button {
-		display:block;
+		display: block;
+	}
+	body > .container {
+		width: 100%;
+	}
+	.container > .header {
+	height: 95px;
+	width: 100%;
+	border-bottom: solid 5px #56524D;
+	font-family: mavenprolight;
+	line-height: 95px;
 	}
 }
 
@@ -62,6 +72,8 @@
 
 
 /*Large Displays*/
+
+/*General settings*/
 body {
 	margin: 0px;
 }
@@ -71,6 +83,8 @@ body {
 	position: relative;
 	z-index: 0;
 }
+
+/*Header sections*/
 .header {
 	height: 81px;
 	/*When making body, remove border-bottom and set height to 76px?*/
@@ -130,15 +144,35 @@ body {
 	font-weight: bold;
 }
 
+/*Projects section*/
+
+.projects {
+	list-style-type: none;
+	padding: 0px;
+}
+.item:hover div {
+	display: block;
+	transition: 1s;
+}
+.detail {
+	display: none;
+	position: absolute;
+	bottom: 10px;
+	width: 285px;
+	height: 80px;
+	padding-top: 10px;
+	text-indent: 5px;
+	font-family: mavenprolight;
+	background-color: #FF5F40;
+}
+.detail > span {
+	display:block;
+}
+.client-name {
+	font-weight: bold;
+}
 
 /*Mobile Displays*/
-.mobile-header {
-	height: 95px;
-	width: 100%;
-	border-bottom: solid 5px #56524D;
-	font-family: mavenprolight;
-	line-height: 95px;
-}
 .mobile-logo {
 	margin: 28px 0px 26px 10%;
 	font-weight: bold;
